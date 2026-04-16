@@ -1,3 +1,137 @@
-<h1>Welcome to my GYM Trainer website</h1>
-<h2>This is your trainer Satya</h2>
-<h3>Get the training</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INHUMAN GYM COACHING</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="student">
+            <a href="#about">Home</a>
+            <a href="#services">Coaching</a>
+            <a href="#students">Students</a>
+            <a href="#coaches">Coaches</a>
+            <a href="#contact">Contact Us</a>
+            <button>JOIN TEAM INHUMANS</button>
+        </nav>
+        <div class="aboutSection" id="about">
+            <h1>
+                Inhumans:We Bleed Different
+            </h1>
+            <p>
+                    We don’t just build strength — we forge lifters who bleed grit, move with purpose, and rise beyond every limit.
+            </p>
+           <button>Apply for coaching</button>
+        </div>
+        <div class="serviceSection" id="services">
+            <h3>COACHING</h3>
+            <h2>Train Under a system that delivers</h2>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h3>PERSONALIZED PROGRAMMING</h3>
+                <p>Customized plans tailored to your strength, goals and level.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>DAEDLIFT SPECIALIZATION</h3>
+                <p>Technique, strength, and injury prevention all in one.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-hand-fist"></i>
+                <h3>PROVEN RESULTS</h3>
+                <p>Our system has helped lifters hit PRs and break limits</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-comment-dots"></i>
+                <h3>DAILY SUPPORT & FEEDBACK</h3>
+                <p>You're never alone. We guide, correct & push you daily</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>COMPETITION PREPARATION</h3>
+                <p>Peak at the right time with meet-specific stratigies</p>
+            </div>
+        </div>
+        <div class="studentsSection" id="students">
+            <h3>STUDENTS</h3>
+            <h2>REAL LIFTERS. REAL RESULTS.</h2>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='studentpic.jpeg') }}" alt="">
+                <h3>Name6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis unde illo illum asperiores vero odio.</p>
+            </div>
+        </div>
+        <div class="coachSection" id="coaches">
+            <h3>COACHES</h3>
+            <H2>EXPERIENCE. KNOWLEDGE. RESULTS.</H2>
+            <div>
+                <img src="{{ url_for('static', filename='coach1.jpeg') }}" alt="">
+                <h3>Satya Kalita</h3>
+                <ul>
+                    <li>Trained Multiple students to gain medal</li>
+                </ul>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='coach3.jpeg') }}" alt="">
+                <h3>Simran Negi</h3>
+                <ul>
+                    <li>2x NATs Medalist</li>
+                    <li>Multiple Times States Medalist</li>
+                    <li>5 Nationals Medals</li>
+                </ul>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='coach2.jpeg') }}" alt="">
+                <h3>Saksham</h3>
+                <ul>
+                   <li>Vice Champ at NATs</li> 
+                   <li>2x Silver States</li> 
+                   <li>SBD 140 -525</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="contactusSection" id="contact">
+            <h3>CONTACT</h3>
+            <h2>LET'S BUILD SOMETHING</h2>
+            <h3>STRONG TOGETHER</h3>
+            <a href="">Instagram</a>
+            <a href="">Email</a>
+           <form action="">
+            <input type="text" placeholder="Your Name">
+            <input type="email" name="" id="" placeholder="Your Email">
+            <input type="text" placeholder="Your Message">
+            <button>SEND MESSAGE</button>
+           </form>
+        </div>
+    </div>
+</body>
+</html>
