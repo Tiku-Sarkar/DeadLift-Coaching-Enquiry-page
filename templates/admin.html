@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+</head>
+<body>
+
+<h1>Client Leads</h1>
+
+{% for row in data %}
+    <div>
+        <p><strong>Name:</strong> {{ row[1] }}</p>
+        <p><strong>Email:</strong> {{ row[2] }}</p>
+        <p><strong>Message:</strong> {{ row[3] }}</p>
+
+        <a href="/delete/{{ row[0] }}">Delete</a>
+
+        <hr>
+    </div>
+{% endfor %}
+
+</body>
+</html>
